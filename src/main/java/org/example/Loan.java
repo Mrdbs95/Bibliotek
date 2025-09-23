@@ -18,7 +18,7 @@ package org.example;
         public Library getLibrary(){return library;}
 
         public void setAvaiable(){
-
+            if(book )
         }
 
 
