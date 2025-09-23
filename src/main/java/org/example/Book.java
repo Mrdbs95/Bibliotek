@@ -1,0 +1,27 @@
+package org.example;
+
+public class Book {
+    private String title;
+    private int pages;
+    //------Setter & Getter Title-------------------------
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    //---------------------------------------------------------
+//---------Setter & Getter Pages---------------------------
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+    //----------------------------------------------------------
+    public String toString() {
+        return "Book: " + title + "("+pages+" pages)";
+    }
+
+}
