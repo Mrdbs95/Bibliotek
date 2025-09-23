@@ -31,5 +31,9 @@ public class Main {
         library.addBook(book10);
         library.addBook(book11);
 
+        for(Book book : library.getBooks()) {
+            System.out.println(book.getTitle() + " av "+ book.getPages());
+        }
+
     }
 }

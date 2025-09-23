@@ -34,9 +34,11 @@ public class Book {
         this.pages = pages;
     }
     //----------------------------------------------------------
+    //--------Skriver ut info om boken--------------------------
     public String toString() {
         return "Book: " + title + "("+pages+" pages)";
     }
+    //----------------------------------------------------------
 
 
 }
