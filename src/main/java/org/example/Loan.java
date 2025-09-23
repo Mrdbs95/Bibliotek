@@ -12,14 +12,12 @@ package org.example;
             this.book = book;
             this.library = library;
         }
-
+//get funktion från member if member godkänt loan = godkänns
         public Book getBook(){return book;}
         public Member getMember(){return member;}
         public Library getLibrary(){return library;}
 
-        public void setAvaiable(){
-            if(book )
-        }
+
 
 
 
