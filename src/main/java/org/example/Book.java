@@ -17,6 +17,8 @@ public class Book {
         return title;
     }
     public void setTitle(String title) {
+        if(title == null || title.isBlank())
+            throw new IllegalArgumentException("Missing Title");
         this.title = title;
     }
     //---------------------------------------------------------
@@ -26,12 +28,17 @@ public class Book {
     }
 
     public void setPages(int pages) {
+        if(pages <= 0) {
+            throw new IllegalArgumentException("Page must be over 0");
+        }
         this.pages = pages;
     }
     //----------------------------------------------------------
+    //--------Skriver ut info om boken--------------------------
     public String toString() {
         return "Book: " + title + "("+pages+" pages)";
     }
+    //----------------------------------------------------------
 
 
 }

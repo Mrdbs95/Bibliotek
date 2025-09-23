@@ -17,6 +17,7 @@ public class Main {
         Book book8 = new Book("Draktränaren 8", 325);
         Book book9 = new Book("Draktränaren 9", 335);
         Book book10 = new Book("Draktränaren 10", 345);
+        Book book11 = new Book("Draktränaren 11", 355);
 
         library.addBook(book1);
         library.addBook(book2);
@@ -28,6 +29,11 @@ public class Main {
         library.addBook(book8);
         library.addBook(book9);
         library.addBook(book10);
+        library.addBook(book11);
 
+        for(Book book : library.getBooks()) {
+            System.out.println(book.getTitle() + " av "+ book.getPages());
+
+        }
     }
 }
