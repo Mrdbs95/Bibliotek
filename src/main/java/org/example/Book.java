@@ -3,6 +3,15 @@ package org.example;
 public class Book {
     private String title;
     private int pages;
+
+    //Konstruktor
+    public Book(String title, int pages){
+        this.title = title;
+        this.pages = pages;
+    }
+    //-----------------------------------------------------
+
+
     //------Setter & Getter Title-------------------------
     public String getTitle() {
         return title;
@@ -23,5 +32,6 @@ public class Book {
     public String toString() {
         return "Book: " + title + "("+pages+" pages)";
     }
+
 
 }
