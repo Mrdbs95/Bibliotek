@@ -12,7 +12,24 @@ public class Library {
         books.add(book);
     }
 
-    public void registerMember(Member member) {
-        members.add(member);
+    // Lista alla böcker
+    public void listBooks() {
+        if (books.isEmpty()) {
+            System.out.println("Inga böcker i biblioteket ännu.");
+        } else {
+            for (Book b : books) {
+                System.out.println(b);
+            }
+        }
+    }
+
+    // Hitta en bok efter titel (returnerar första matchen)
+    public Book findBook(String title) {
+        for (Book b : books) {
+            if (b.getTitle().equalsIgnoreCase(title)) {
+                return b;
+            }
+        }
+        return null; // om ingen hittades
     }
 }
