@@ -36,7 +36,7 @@ public class Member {
     }
     @Override
     public String toString(){
-        return "Member{id = '%s',email =' %s'}".formatted (id, Name, email);
+        return "Member{id = '%s',email =' %s'}".formatted (id, name, email);
     }
 
 }
